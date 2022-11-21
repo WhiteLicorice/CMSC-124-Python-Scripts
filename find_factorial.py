@@ -2,7 +2,7 @@
 ## This program finds the factorial of a user-input
 ## Intuitively, we know that factorials only exist for non-negative integers
 
-def factorial(n = 10):
+def find_factorial(n = 10):
     ##  Check for possible type errors
     if (n < 0) or (str(n).isdigit() != True):
         raise Exception("Input must be a non-negative integer.")
