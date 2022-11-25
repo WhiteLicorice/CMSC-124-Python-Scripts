@@ -12,7 +12,7 @@ def gen_primes(low = 1, high = 1000):
     for num in range(low, high + 1):
         is_prime = 1
         if num > 1:
-            for i in range(2, math.isqrt(num)):
+            for i in range(2, math.isqrt(num) + 1):
                 if (num % i) == 0:
                     is_prime = 0
                     break
