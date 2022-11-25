@@ -4,7 +4,7 @@ import graph
 
 def dijkstra(input_graph, source):
 
-    ## Dict container for the shortest path to each vertex
+    ## Dictionary container for the shortest path to each vertex
     sp = {}
     ## Container used for backtracking the path
     prev = {}
@@ -99,7 +99,7 @@ def display_sssp_header(sp, source, input_graph):
     ## Footer
     print("---Single Source Shortest Path---")
 
-#Driver function for testing module  
+## Driver function for testing module  
 def test_graph():
     ## Create a new instance of the graph class
     g = graph.graph_udr_wgt()
