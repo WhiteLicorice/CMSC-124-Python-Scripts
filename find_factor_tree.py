@@ -1,6 +1,6 @@
 ##  Prime Factor Tree Generator developed by RA Jocsing for CMSC124 LEC Term Paper S.Y. 2022-2023
 ##  This prints out the factor tree of a positive integer, stopping at its prime factors
-##  Utilizes a recursive algorithm, does not actually return a formal binary tree
+##  Utilizes a recursive algorithm, does not actually return a formal binary tree data structure
 
 import math
 
@@ -11,7 +11,7 @@ def find_factor(n):
         if (n % i) == 0:
             return i
 
-##  Helper function used to verify if a number is a prime
+##  Helper function used to verify if a number is prime
 def check_prime(n):
     is_prime = True     ##  Flag -> we assume that n is prime
     
@@ -60,7 +60,7 @@ def main(n = 100):
         find_factor_tree(n, prime_factors)
 
     ##  Use list comprehension to remove all 1's from the prime factors container
-    ##  The list can be wrapped in a sorted() function call if a sorted array of prime numbers is desired
+    ##  The list can be wrapped in a sorted() function call if a sorted array of prime factors is desired
     prime_factors = [number for number in prime_factors if number != 1]
 
     ##  Print out the prime factors of n
