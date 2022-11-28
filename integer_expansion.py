@@ -17,7 +17,7 @@ def exp_str(n = 69420):
             print(" + ", end = "")
         i += 1
 
-##  A more traditional implementation of Integer Explansion using arithmetic
+##  A more traditional implementation of Integer Expansion using arithmetic
 def exp_mod(n = 69420):
 
     ##  Edge case for handling the case when n = 0
